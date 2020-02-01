@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+}
+
+.title {
+  padding-top: 15px;
+  padding-left: 15px;
+  font-weight: 700;
+}
+
+.note_wrapper {
+  margin-top: 15px;
+  border-radius: 15px;
+  background: rgba(1, 1, 1, .8);
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+}
+
+.message {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 15px;
+  p1 {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.logo_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+
+.content {
+  border-radius:  0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 80%;
+  background: rgba(20, 40, 40, .8);
+  transition: .2s;
+  h2 {
+    font-weight: 300;
+  }
+}
+
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: white;
+  outline: none;
+}
+
+.noBullet {
+  list-style-type: none;
+  padding: 0;
+}
+
+#join-btn {
+  border: 1px solid rgba(10, 180, 180, 1);
+  background: rgba(20, 20, 20, .6);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: .4s;
+  &:hover {
+    background: rgba(20, 20, 20, .8);
+    padding: 10px 80px;
+  }
+}

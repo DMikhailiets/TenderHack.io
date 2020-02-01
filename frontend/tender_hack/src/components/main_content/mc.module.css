@@ -1,0 +1,17 @@
+.form_wrapper {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_content_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content_wrapper {
+    background: url(../../img/hero-background.jpg) no-repeat;
+}
