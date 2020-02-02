@@ -33,7 +33,7 @@ function App(props) {
     <BrowserRouter>
     <div className="App">
       <div>
-        <Route exact path="" render = { () => <Section />}/>
+        <Route exact path="/search" render = { () => <Section />}/>
         <Route exact path="/resoults" render = { () => <Section />}/>
       </div>
     </div>

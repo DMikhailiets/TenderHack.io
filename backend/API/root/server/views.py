@@ -18,7 +18,7 @@ class ML:
     texts = data['Наменование'].values.tolist()
     texts = [str(text) for text in texts]
     docs = [[text for text in doc.split()] for doc in texts]
-    ft = FastText.load('/home/dmikhailiets/My_Work/My_Projects/TenderHack.io/backend/API/root/server/ftmodel1')
+    ft = FastText.load('/home/dmikhailiets/My_Work/My_Projects/TenderHack.io/backend/API/root/server/ftmodel')
     @classmethod
     def get_values(cls,name):
         ind = cls.ids[name]

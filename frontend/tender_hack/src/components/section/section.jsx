@@ -19,7 +19,7 @@ const Section = (props) => {
       let data = await response.json();
       // console.log(content.splice(0, 10));
       //console.log(data);
-      ReactDOM.render(<Main_content data={data}/>, document.getElementById('root'));
+      await ReactDOM.render(<Main_content data={data}/>, document.getElementById('root'));
             
   }
   

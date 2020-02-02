@@ -12,8 +12,8 @@ import Note from '../note/note';
 const Main_content = (props) => {
    
     console.log(props.data);
-    setTimeout(5000);
-    let noteArray = props.data.noteData.map(note => <Note  id={JSON.parse(note.id)} name={JSON.parse(note.name)} title={JSON.parse(note.title)}/>);
+  
+    let noteArray = props.data.noteData.map(note => <Note  id={note.id} name={note.name} title={note.title}/>);
     console.log(props);
     
   

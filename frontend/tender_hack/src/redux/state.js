@@ -1,4 +1,4 @@
-let state = {
+let store = {
     noteData:  [
        {id: 0, title: "Ложка", maker: "Russia", name: 'bla', weight: "4323"},
        {id: 1, title: "Стол", maker: "Japan", name: 'bla', weight: "13121"},
