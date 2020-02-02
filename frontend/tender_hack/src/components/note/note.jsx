@@ -15,18 +15,13 @@ const Note = (props) => {
     <div className={style.note_wrapper}>
       <div className={style.logo_wrapper}>
          <div className={style.logo_date}>
-           {props.maker}
+         {props.name}
          </div>
-         <div className={style.logo_date}>
-           {props.weight}
-         </div>
+         
       </div>
       <div className={style.content}>
         <div className={style.title}>
-    <div>{props.title}</div>
-        </div>
-        <div className={style.message}>
-    <p>{props.name}</p>
+    <p>{props.title}</p>
         </div>
       </div>
     </div>

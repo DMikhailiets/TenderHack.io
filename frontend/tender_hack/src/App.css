@@ -2444,8 +2444,12 @@ textarea:focus {
   width: 100%;
 }
 .destinations-form .input-line .form-input {
-  width: 100%;
-  height: 60px;
+  width: 700px;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 0;
   padding: 0 240px 0 30px;
   font-size: 14px;
@@ -2526,10 +2530,10 @@ textarea:focus {
 }
 .btn.btn-special {
   background: #e7434e;
-  line-height: 60px;
+  line-height: 40px;
   border-radius: 5px;
   color: #ffffff;
-  height: 60px;
+  height: 40px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -2741,11 +2745,12 @@ textarea:focus {
 /* -------- Intro Section -------- */
 .hero-box {
   background-image: url(./img/hero-background.jpg);
+  padding-bottom: 70px;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   padding: 100px 0;
-  padding-bottom: 300px;
+  padding-bottom: 312px;
 }
 .hero-box .hero-text h1,
 .hero-box .hero-text p {

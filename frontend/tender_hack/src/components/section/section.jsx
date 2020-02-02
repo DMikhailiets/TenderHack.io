@@ -30,7 +30,7 @@ const Section = (props) => {
                <div className="container">
                   <div className="hero-text align-center">
                      <h1>Найди своего поставщика сейчас!</h1>
-                     <p>и закажи у него товар по завышенной цене!</p>
+                     <p>и закажи у него товар по оптимальной цене!</p>
                   </div>
                  
                   <form className="destinations-form">

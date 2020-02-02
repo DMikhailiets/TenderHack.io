@@ -19,15 +19,7 @@ const Main_content = (props) => {
   
     return(
         <div className={style.content_wrapper}>
-            <div className={style.form_wrapper}>
-                  <form className="destinations-form">
-                     <div className="input-line">
-                        <textarea  type="text" name="destination" className="form-input check-value" placeholder="КАКОЙ ТОВАР ВАС ИНТЕРЕСУЕТ?" /> 
-                        <button  type="button" name="destination-submit" className="form-submit btn btn-special">Искать товар</button>
-                     </div>
-                  </form>
-
-            </div>
+             <a className={style.button}href="/search">search</a>
             <div className={style.main_content_wrapper}>
             {noteArray}
             </div>
