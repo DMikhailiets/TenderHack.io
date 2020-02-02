@@ -15,10 +15,37 @@ let state = {
    }
 };
 
-export let request = (requestMessage) => {
-    let queryBody = requestMessage;
-    const api_url = 
-      fetch('http://127.0.0.1:8000/query/' +  queryBody);
-}
+var global;
+
+
+// let getData = axios.get()
+
+// export async let request =  (requestMessage) => {
+//        let queryBody = requestMessage;
+//        // const api_url = 
+//        //   fetch('http://127.0.0.1:8000/query/' +  queryBody);
+//        const api_url =  fetch('http://127.0.0.1:8000/query/' +  queryBody).then(
+//            response => {
+               
+//            }
+//        ); 
+//        let data =  api_url.json;
+//        return data;
+//}
+
+// export  var data;
+// export async function request(requestMessage){
+//     let response = await fetch('http://127.0.0.1:8000/query/' +  'queryBody');
+//     data = await response.json();
+//     // console.log(content.splice(0, 10));
+//     dataResponse(data);
+
+// }
+
+// let dataResponse = (data) =>{
+
+// }
+
+
 
 export default state;

@@ -33,8 +33,8 @@ function App(props) {
     <BrowserRouter>
     <div className="App">
       <div>
-        <Route exact path="/search" render = { () => <Section request={props.request}/>}/>
-        <Route exact path="/resoults" render = { () => <Main_content resoults={props.state.noteData} request={props.request}/>}/>
+        <Route exact path="" render = { () => <Section />}/>
+        <Route exact path="/resoults" render = { () => <Section />}/>
       </div>
     </div>
     </BrowserRouter>

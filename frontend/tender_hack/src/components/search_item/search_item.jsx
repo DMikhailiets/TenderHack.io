@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import '../../App.css';
 import style from './style.module.css';
 
@@ -18,14 +18,14 @@ let state = {
 
 const Search_item = (props) => {
     return (
-      <div class="product-item col-sm-6 col-md-4">
+      <div className="product-item col-sm-6 col-md-4">
          <img src="./photo.jpg">
-         <div class="product-list">
+         <div className="product-list">
             <h3>{props.title}</h3>
-            <span class="price">{props.maker}</span></span>
-            <span class="price">{props.nickname}</span></span>
-            <span class="price">{props.weight}</span></span>
-            <a href="" class="button">bla</a>
+            <span className="price">{props.maker}</span></span>
+            <span className="price">{props.nickname}</span></span>
+            <span className="price">{props.weight}</span></span>
+            <a href="" className="button">bla</a>
          </div>
       </div>
     )

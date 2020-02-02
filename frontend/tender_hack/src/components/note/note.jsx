@@ -26,7 +26,7 @@ const Note = (props) => {
     <div>{props.title}</div>
         </div>
         <div className={style.message}>
-    <p1>{props.name}</p1>
+    <p>{props.name}</p>
         </div>
       </div>
     </div>

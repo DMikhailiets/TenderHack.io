@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.urls import path
-from .views import index, get_text, products
+#from .views import get_text
+from .views import products
 urlpatterns = [
-    path('test/', index),
     path('query/<str:id>', products),
 ]
 

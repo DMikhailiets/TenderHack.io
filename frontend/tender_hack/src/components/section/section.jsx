@@ -2,6 +2,8 @@ import React from 'react';
 import '../../App.css';
 import style from './style.module.css';
 import { NavLink } from 'react-router-dom';
+import Main_content from '../main_content/main_content';
+import ReactDOM from 'react-dom';
 
 
 const Section = (props) => {
@@ -9,36 +11,32 @@ const Section = (props) => {
 
     let getQueryBody = () => {
        let queryBody = myRef.current.value;
-       props.request(queryBody);
+       request(queryBody);
     }
-   
-   // let myAlert = () => {
-   //      let text = myRef.current.value;
-   //      alert(text);
-   //      myRequest(text);
-   // }
-   // let myRequest = async (text) => {
-   //    // const api_url = await fetch(`http:127.0.0.1:8000/api/${text}`);
-   //    const api_url = await fetch('http://127.0.0.1:8000/query/' +  text);
-     
-   //    const data = await api_url.json;
-   //    console.log=(data);
-   // }
-      
+
+   async function request(requestMessage){
+      let response = await fetch('http://127.0.0.1:8000/query/' +  requestMessage);
+      let data = await response.json();
+      // console.log(content.splice(0, 10));
+      //console.log(data);
+      ReactDOM.render(<Main_content data={data}/>, document.getElementById('root'));
+            
+  }
+  
     return (
 
-         <div class={style.content_wrapper}>
-            <div class="hero-box">
-               <div class="container">
-                  <div class="hero-text align-center">
+         <div className={style.content_wrapper}>
+            <div className="hero-box">
+               <div className="container">
+                  <div className="hero-text align-center">
                      <h1>Найди своего поставщика сейчас!</h1>
                      <p>и закажи у него товар по завышенной цене!</p>
                   </div>
                  
-                  <form class="destinations-form">
-                     <div class="input-line">
-                        <textarea ref={myRef} type="text" name="destination" class="form-input check-value" placeholder="КАКОЙ ТОВАР ВАС ИНТЕРЕСУЕТ?" /> 
-                        <NavLink onClick={getQueryBody}to="/resoults"><button  type="button" name="destination-submit" class="form-submit btn btn-special">Искать товар</button></NavLink>
+                  <form className="destinations-form">
+                     <div className="input-line">
+                        <textarea ref={myRef} type="text" name="destination" className="form-input check-value" placeholder="КАКОЙ ТОВАР ВАС ИНТЕРЕСУЕТ?" /> 
+                        <NavLink onClick={getQueryBody}to="/resoults"><button  type="button" name="destination-submit" className="form-submit btn btn-special">Искать товар</button></NavLink>
                      </div>
                   </form>
                   
